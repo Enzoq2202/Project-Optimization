@@ -2,11 +2,11 @@
 
 ## 🎯 Visão Geral do Projeto
 
-Este projeto foi desenvolvido para simular e otimizar carteiras de investimento com base no índice Dow Jones, utilizando o Sharpe Ratio como métrica principal para identificar a melhor carteira. Meu objetivo foi maximizar o retorno ajustado ao risco, respeitando restrições específicas, e implementei paralelismo e funções puras para lidar com a alta complexidade computacional. O projeto foi implementado em Python, com foco em programação funcional e paralelismo, e utiliza dados financeiros reais obtidos via API.
+Este projeto foi desenvolvido para simular e otimizar carteiras de investimento com base no índice Dow Jones, utilizando o Sharpe Ratio como métrica principal para identificar a melhor carteira. O objetivo foi maximizar o retorno ajustado ao risco, respeitando restrições específicas, garantindo a implementação de paralelismo e funções puras para lidar com a alta complexidade computacional. O projeto foi implementado em Python, com foco em programação funcional e paralelismo, e utiliza dados financeiros reais obtidos via API.
 
 ## 📊 Contexto do Problema
 
-O desafio era simular carteiras com características desejáveis (alto retorno, baixa volatilidade) para um portfolio manager. Eu utilizei o Sharpe Ratio, definido como:
+O desafio era simular carteiras com características desejáveis (alto retorno, baixa volatilidade) para um portfolio manager. Utilizei o Sharpe Ratio, definido como:
 
 $$\text{SR} = \frac{\mu - r_{\text{free}}}{\sigma}$$
 
@@ -52,7 +52,7 @@ Project-Optimization/
 
 ## 📦 Dependências
 
-O projeto utiliza a biblioteca UV para gerenciamento de dependências (em vez de `requirements.txt`). As bibliotecas necessárias estão especificadas no arquivo `pyproject.toml`, gerado automaticamente pelo UV. As principais dependências incluem:
+O projeto utiliza a biblioteca UV para gerenciamento de dependências. As bibliotecas necessárias estão especificadas no arquivo `pyproject.toml`, gerado automaticamente pelo UV. As principais dependências incluem:
 
 - `yfinance`: Para obtenção de dados financeiros
 - `numpy`, `pandas`: Para manipulação de dados
@@ -113,7 +113,7 @@ Após a execução, explore o diretório `results/` para verificar:b
 ## 📊 Resultados Obtidos
 
 ### Melhor Carteira
-Eu identifiquei a melhor carteira com base no maior Sharpe Ratio no período de treino (01/08/2024 a 31/12/2024). Abaixo está o conteúdo do arquivo `results/best_portfolio.csv`:
+Identifiquei a melhor carteira com base no maior Sharpe Ratio no período de treino (01/08/2024 a 31/12/2024). Abaixo está o conteúdo do arquivo `results/best_portfolio.csv`:
 
 | Ticker | Weight                |
 |--------|----------------------|
