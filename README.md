@@ -167,13 +167,14 @@ As métricas de desempenho da melhor carteira estão no arquivo `results/perform
 ### Gráficos Gerados
 
 #### Alocação da Melhor Carteira
-![Alocação da Melhor Carteira](https://github.com/user-attachments/assets/5cd8e1c0-021a-4e59-9989-7bb4f592f454)
+![Alocação da Melhor Carteira](https://github.com/user-attachments/assets/ddf028a4-2688-4ee0-ba2d-55795c117785)
 
 
 A carteira otimizada, identificada pelo maior Sharpe Ratio (2.4818) no período de treino, apresenta uma distribuição de pesos que reflete uma estratégia de diversificação eficiente. Ações como AAPL, MSFT e JPM recebem alocações máximas de 0.0548, enquanto outras como JNJ (0.0022) e VZ (0.0052) têm participações menores. Esta estrutura, respeitando as restrições ($w_i \leq 0.2$ e $\sum w_i = 1$), resultou em uma volatilidade anualizada de 11.66% no período de teste, demonstrando o sucesso da estratégia de otimização.
 
 #### Comparação de Tempo de Execução
-![Comparação de Tempos](https://github.com/user-attachments/assets/ddf028a4-2688-4ee0-ba2d-55795c117785)
+![Comparação de Tempos](https://github.com/user-attachments/assets/5cd8e1c0-021a-4e59-9989-7bb4f592f454)
+
 
 
 A implementação do paralelismo com `multiprocessing` demonstrou ganhos significativos de performance. Em testes com 100 combinações (1000 simulações cada), o tempo de execução caiu de 1.75 para 1.25 segundos, uma redução de 28%. Este ganho de eficiência foi crucial para processar o total de 142 milhões de simulações em aproximadamente 21 minutos no MacBook Air M1. Embora o tempo seja superior ao benchmark de 522 segundos obtido em um Alienware, a diferença é justificável pelas características do hardware utilizado.
