@@ -177,7 +177,7 @@ A carteira otimizada, identificada pelo maior Sharpe Ratio (2.4818) no período 
 
 
 
-A implementação do paralelismo com `multiprocessing` demonstrou ganhos significativos de performance. Em testes com 100 combinações (1000 simulações cada), o tempo de execução caiu de 1.75 para 1.25 segundos, uma redução de 28%. Este ganho de eficiência foi crucial para processar o total de 142 milhões de simulações em aproximadamente 21 minutos no MacBook Air M1. Embora o tempo seja superior ao benchmark de 522 segundos obtido em um Alienware, a diferença é justificável pelas características do hardware utilizado.
+A implementação do paralelismo com `multiprocessing` demonstrou ganhos significativos de performance. Em testes com 100 combinações (1000 simulações cada), o tempo de execução caiu de 1.97 para 1.23 segundos, uma redução de 37.6%. Este ganho de eficiência foi crucial para processar o total de 142 milhões de simulações em aproximadamente 21 minutos no MacBook Air M1. Embora o tempo seja superior ao benchmark de 522 segundos obtido em um Alienware, a diferença é justificável pelas características do hardware utilizado.
 
 ## 📈 Análise dos Resultados
 
@@ -192,7 +192,7 @@ A implementação do paralelismo com `multiprocessing` demonstrou ganhos signifi
 - O retorno (0.2505) é mais moderado em comparação com carteiras menos diversificadas (ex.: 5 ações, onde o Sharpe_Treino foi 4.8892)
 
 ### Paralelismo
-- O paralelismo reduziu o tempo de execução em ~28% (de 1.75s para 1.25s na comparação com 100 combinações)
+- O paralelismo reduziu o tempo de execução em ~37.6% (de 1.97s para 1.23s)
 - Demonstra a eficácia da abordagem com multiprocessing
 
 ## ✅ Conformidade com a Rubrica
@@ -222,7 +222,7 @@ A implementação do paralelismo com `multiprocessing` demonstrou ganhos signifi
 
 - [x] **Benchmark de Performance** (+0.5)
   - Comparação com/sem paralelismo
-  - Redução de 28% no tempo de execução
+  - Redução de 37.6% no tempo de execução
   - Análise de escalabilidade
 
 ## 🎓 Conclusão
@@ -232,7 +232,7 @@ O projeto foi concluído com sucesso, atingindo todos os objetivos propostos:
 ### Resultados Principais
 - Processamento de 142.5 milhões de simulações em ~21 minutos
 - Carteira otimizada com Sharpe Ratio de 2.4818 (treino) e 1.9771 (teste)
-- Implementação eficiente de paralelismo com redução de 28% no tempo de execução
+- Implementação eficiente de paralelismo com redução de 37.6% no tempo de execução
 
 ### Conformidade
 - Todas as restrições técnicas foram respeitadas
